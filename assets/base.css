@@ -2265,4 +2265,7 @@ background-color: #09092d;
     display: flex;
     flex-direction: column;
 }
+.multicolumn-list p:last-of-type {
+    margin-top: auto;
+}
 /* end develadawn */
