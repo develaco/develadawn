@@ -96,18 +96,6 @@
         "show_vendor": false
       }
     },
-    "1629434961f2e28fa9": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div style=\"text-align:center;\">\n<a class=\"button button--primary\">\nView All Featured Games\n<\/a>\n<a class=\"button button--primary\">\nShop Games\n<\/a>\n<div>"
-      }
-    },
-    "1629441268db9846dc": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<style>\n.multicolumn-card__info{\nborder-radius: 50px 50px 50px 50px;\nborder-left: 1px solid #8401b4;\nborder-right: 1px solid #8401b4;\n}\n.multicolumn:not(.background-none) .multicolumn-card {\n    border-radius: 25px;\n    border-left: 1px solid #8401b4;\n    border-right: 1px solid #8401b4;\n    background: rgba(0,0,0,0.5);\n\n}\n<\/style>"
-      }
-    },
     "1629448965ee5605fd": {
       "type": "contact-form",
       "settings": {
@@ -120,8 +108,6 @@
     "162943512772967a0d",
     "multi_column",
     "16294349554838f559",
-    "1629434961f2e28fa9",
-    "1629441268db9846dc",
     "1629448965ee5605fd"
   ]
 }
