@@ -2217,6 +2217,9 @@ body{
 	padding-top: 1rem;
     padding-bottom: 1rem;
 }
+.header.page-width{
+	padding: 0 1rem;
+}
 .header .link{
 	font-size: 1.8rem;
 }
