@@ -1712,7 +1712,7 @@ input[type='checkbox'] {
 .announcement-bar {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.2);
   color: rgb(var(--color-foreground));
-  background-color: rgba(var(--color-base-accent-2),.25);
+  background-color: rgba(var(--color-base-accent-1),.25);
 }
 
 .announcement-bar__link {
