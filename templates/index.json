@@ -1,18 +1,28 @@
 {
   "sections": {
-    "16294349554838f559": {
-      "type": "featured-collection",
+    "162943512772967a0d": {
+      "type": "multicolumn",
+      "blocks": {
+        "162943512772967a0d-0": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>InDiPro Games is a distribution company focused on independently produced board\/card games.<br\/>We offer highly competitive PRINT services to new publishers.<br\/>We also host Gaming Parties at our Friendly Local Shops<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "162943512772967a0d-0"
+      ],
       "settings": {
-        "title": "Featured InDiPro Games",
-        "collection": "featured",
-        "products_to_show": 6,
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
       }
     },
     "multi_column": {
@@ -22,21 +32,21 @@
           "type": "column",
           "settings": {
             "title": "Welcome Gamers",
-            "text": "<p><a href=\"\/collections\" title=\"All collections\">View All Featured Games<\/a><\/p>"
+            "text": "<p><a href=\"\/collections\" title=\"All collections\">View All Featured Games<\/a><br\/>If you’re a small publisher and want to work with us to get your games onto store shelves, click here for more details:<br\/><br\/><\/p>"
           }
         },
         "8d1cff45-770b-4ef9-8e64-5174c24fd630": {
           "type": "column",
           "settings": {
             "title": "Indie Publishers",
-            "text": ""
+            "text": "<p><br\/>If you’re a small publisher and want to work with us to get your games onto store shelves, click here for more details:<br\/><br\/><\/p>"
           }
         },
         "fec67fe0-1482-47e1-8ee9-3307f3636011": {
           "type": "column",
           "settings": {
             "title": "Wholesale Game Shops",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>If you are a Retail Store, simply email us your Business License\/ Resellers Permit and we will upgrade your account to wholesale pricing and add a convenient Order Form button for faster online shopping.<\/p>"
           }
         }
       },
@@ -56,6 +66,21 @@
         "swipe_on_mobile": false
       }
     },
+    "16294349554838f559": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured InDiPro Games",
+        "collection": "featured",
+        "products_to_show": 6,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
+      }
+    },
     "1629434961f2e28fa9": {
       "type": "custom-liquid",
       "settings": {
@@ -64,8 +89,9 @@
     }
   },
   "order": [
-    "16294349554838f559",
+    "162943512772967a0d",
     "multi_column",
+    "16294349554838f559",
     "1629434961f2e28fa9"
   ]
 }
