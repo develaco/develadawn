@@ -2286,7 +2286,12 @@ body.template-index #shopify-section-template--14926646935734__1629482859fcbaf94
 section#shopify-section-template--14926646935734__1629448965ee5605fd {
     background-color: rgb(var(--color-background));
 }
+/*footer*/
 #contact {
     padding: 5rem;
 }
+#contact .title, .title-wrapper-with-link{
+	margin: 0 0 2rem;
+}
+/*footer*/
 /* end develadawn */
