@@ -2226,4 +2226,8 @@ body{
 .announcement-bar{
 background-color: #09092d;
 }
+.announcement-bar,
+.header-wrapper--border-bottom {
+    border-bottom: .1rem solid #520479;
+}
 /* end develadawn */
