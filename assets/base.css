@@ -2246,6 +2246,7 @@ background-color: #09092d;
 }
 body.template-index #shopify-section-template--14926646935734__1629482859fcbaf948{
   max-width: 1200px;
+  margin:auto;
 }
 body.template-index #shopify-section-template--14926646935734__1629482859fcbaf948 .media>img {
     object-fit: contain;
