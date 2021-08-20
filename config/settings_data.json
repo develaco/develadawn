@@ -1,14 +1,16 @@
 {
   "current": {
     "colors_solid_button_labels": "#FFFFFF",
-    "colors_accent_1": "#7ff2be",
-    "colors_accent_2": "#e22120",
+    "colors_accent_1": "#8d00be",
+    "colors_accent_2": "#7ff2be",
     "colors_text": "#ccccff",
     "colors_outline_button_labels": "#121212",
     "colors_background_1": "#06071f",
     "colors_background_2": "#F3F3F3",
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
+    "sale_badge_color_scheme": "accent-1",
+    "currency_code_enabled": false,
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
