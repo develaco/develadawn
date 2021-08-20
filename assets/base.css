@@ -2269,4 +2269,9 @@ background-color: #09092d;
 .multicolumn-list p:last-of-type {
     margin-top: auto;
 }
+@media screen and (min-width: 750px) and (max-width: 950px){
+  .page-width {
+      padding: 0 1rem;
+  }
+}
 /* end develadawn */
