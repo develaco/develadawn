@@ -2284,7 +2284,7 @@ body.template-index #shopify-section-template--14926646935734__1629482859fcbaf94
 }
 /*footer*/
 section#shopify-section-template--14926646935734__1629448965ee5605fd {
-    background-color: rgb(var(--color-background));
+    background-color: rgba(var(--color-background), 0.75);
     margin-bottom:0;
 }
 #contact {
