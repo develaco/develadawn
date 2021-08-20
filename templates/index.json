@@ -17,7 +17,6 @@
     },
     "multi_column": {
       "type": "multicolumn",
-      "disabled": true,
       "blocks": {
         "e1c732c1-a177-465a-824f-4f8e30afca36": {
           "type": "column",
@@ -44,8 +43,8 @@
         "image_ratio": "adapt",
         "column_alignment": "center",
         "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
+        "button_label": "test",
+        "button_link": "https:\/\/test.com",
         "swipe_on_mobile": false
       }
     },
