@@ -39,21 +39,21 @@
           "type": "column",
           "settings": {
             "title": "Welcome, Gamers!!",
-            "text": "<p>Tired of playing Monopoly? We make it easy to find new games you'll love! Beginner or Expert? We can help you find the perfect game. Click the button below to browse our full catalog. If you have questions, Contact Us<\/p><p><a href=\"\/collections\" title=\"All collections\">InDiPro Games<\/a><br\/><br\/><\/p>"
+            "text": "<p>Tired of playing Monopoly? We make it easy to find new games you'll love! Beginner or Expert? We can help you find the perfect game. Click the button below to browse our full catalog.<\/p><p>If you have questions, <a href=\"#contact\" title=\"#contact\">Contact Us<\/a>!<\/p><p><a href=\"\/collections\" title=\"All collections\">InDiPro Games<\/a><br\/><br\/><\/p>"
           }
         },
         "8d1cff45-770b-4ef9-8e64-5174c24fd630": {
           "type": "column",
           "settings": {
             "title": "Indie Publishers",
-            "text": "<p><br\/>If you’re a small publisher and want to work with us to get your games onto store shelves, click here for more details:<br\/><br\/><\/p>"
+            "text": "<p>If you’re a small publisher and want to work with us to get your games onto store shelves, click here for more details:<br\/><\/p><p>If you have questions, <a href=\"#contact\" title=\"#contact\">Contact Us<\/a>!<\/p><p><a href=\"#\" title=\"#\">Indie Publishers<\/a><br\/><\/p>"
           }
         },
         "fec67fe0-1482-47e1-8ee9-3307f3636011": {
           "type": "column",
           "settings": {
-            "title": "Wholesale Game Shops",
-            "text": "<p>If you are a Retail Store, simply email us your Business License\/ Resellers Permit and we will upgrade your account to wholesale pricing and add a convenient Order Form button for faster online shopping.<\/p>"
+            "title": "Wholesale",
+            "text": "<p>If you are a Retail Store, simply email us your Business License\/ Resellers Permit and we will upgrade your account to wholesale pricing and add a convenient Order Form button for faster online shopping. <br\/><\/p><p>If you have questions, <a href=\"#contact\" title=\"#contact\">Contact Us<\/a>!<\/p><p><a href=\"#\" title=\"#\">Wholesale<\/a><\/p>"
           }
         }
       },
