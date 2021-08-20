@@ -93,6 +93,12 @@
       "settings": {
         "custom_liquid": "<div style=\"text-align:center;\">\n<a class=\"button button--primary\">\nView All Featured Games\n<\/a>\n<a class=\"button button--primary\">\nShop Games\n<\/a>\n<div>"
       }
+    },
+    "1629441268db9846dc": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.multicolumn-list__item grid__item{\nborder-radius: 50px 50px 50px 50px;\n}\n<\/style>"
+      }
     }
   },
   "order": [
@@ -100,6 +106,7 @@
     "162943512772967a0d",
     "multi_column",
     "16294349554838f559",
-    "1629434961f2e28fa9"
+    "1629434961f2e28fa9",
+    "1629441268db9846dc"
   ]
 }
