@@ -2230,7 +2230,7 @@ background-color: #09092d;
 .header-wrapper--border-bottom {
     border-bottom: .1rem solid #520479;
 }
-.multicolumn-card a:not(:first-of-type){
+.multicolumn-card a{
 	cursor: pointer;
     display: inline-flex;
     justify-content: center;
@@ -2249,5 +2249,5 @@ background-color: #09092d;
     transition: box-shadow var(--duration-short) ease;
     -webkit-appearance: none;
     appearance: none;
-      }
+}
 /* end develadawn */
