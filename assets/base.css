@@ -2263,10 +2263,13 @@ body.template-index #shopify-section-template--14926646935734__1629482859fcbaf94
 body.template-index #shopify-section-template--14926646935734__1629482859fcbaf948 .image-with-text__media--small {
     height: auto!important;
 }
-@media screen and (min-width: 990px){
+body.template-index #shopify-section-template--14926646935734__1629482859fcbaf948 .image-with-text__heading{
+	width: 100%;
+  	text-align: center;
+}
 body.template-index #shopify-section-template--14926646935734__1629482859fcbaf948 .image-with-text__content,
 body.template-index #shopify-section-template--14926646935734__1629482859fcbaf948 .image-with-text__media img{
       padding: 2rem;
   }
-}
+
 /* end develadawn */
