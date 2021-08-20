@@ -2230,7 +2230,7 @@ background-color: #09092d;
 .header-wrapper--border-bottom {
     border-bottom: .1rem solid #520479;
 }
-.multicolumn-card a{
+.multicolumn-card a:first-of-type{
 	cursor: pointer;
     display: inline-flex;
     justify-content: center;
