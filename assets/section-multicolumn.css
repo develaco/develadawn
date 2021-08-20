@@ -233,8 +233,8 @@ body.template-index .multicolumn-list{
     max-width: 1200px;
   	margin: auto;
 }
-@media screen and (min-width: 750px)
-  body.template-index .multicolumn-list__item{
+@media screen and (min-width: 750px){
+  body.template-index .multicolumn-list .multicolumn-list__item{
 	padding: 1rem;
   }
 }
