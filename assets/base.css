@@ -2240,7 +2240,7 @@ background-color: #09092d;
     padding: .9rem 3rem 1.1rem;
     text-decoration: none;
     border: 0;
-    border-radius: 0;
+    border-radius: 15px;
     background-color: rgba(var(--color-button),var(--alpha-button-background));
     box-shadow: 0 0 0 .1rem rgba(var(--color-button),var(--alpha-button-border));
     color: rgb(var(--color-button-text));
