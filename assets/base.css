@@ -2257,7 +2257,7 @@ background-color: #09092d;
     display: flex;
     flex-direction: column;
 }
-.multicolumn-list h3, .multicolumn-list p {
+.multicolumn-list p {
     flex: 1;
 }
 .multicolumn-card__info div.rte{
