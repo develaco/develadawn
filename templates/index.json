@@ -1,5 +1,11 @@
 {
   "sections": {
+    "162944088281d635c7": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"text-align:center\">\n<h1>InDiPro Games<\/h1>\n<ul style=\"list-style:none;\">\n<li>✔ Is a distribution company\n<li>✔ Focuses on independently produced board\/card games\n<li>✔  Gets indie publishers into Local Game Shops\n<li>✔ Hosts Gaming Parties at Local Game Shops\n<\/ul>\n<\/div>"
+      }
+    },
     "162943512772967a0d": {
       "type": "multicolumn",
       "blocks": {
@@ -7,7 +13,7 @@
           "type": "column",
           "settings": {
             "title": "About Us",
-            "text": "<p>InDiPro Games is a distribution company focused on independently produced board\/card games.<br\/>We offer highly competitive PRINT services to new publishers.<br\/>We also host Gaming Parties at our Friendly Local Shops<br\/><\/p>"
+            "text": "<p><strong>InDiPro Games is a distribution company focused on independently produced board\/card games.<\/strong><br\/>We offer highly competitive PRINT services to new publishers.<br\/>We also host Gaming Parties at our Friendly Local Shops<br\/><\/p>"
           }
         }
       },
@@ -89,6 +95,7 @@
     }
   },
   "order": [
+    "162944088281d635c7",
     "162943512772967a0d",
     "multi_column",
     "16294349554838f559",
