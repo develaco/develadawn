@@ -52,7 +52,7 @@
     "1629434961f2e28fa9": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div style=\"text-align:center;\">\n<button>\nView All Featured Games\n<\/button>\n<button>\nView All Featured Games\n<\/button>\n<div>"
+        "custom_liquid": "<div style=\"text-align:center;\">\n<button class=\"shopify-payment-button__button shopify-payment-button__button_unbranded\">\nView All Featured Games\n<\/button>\n<button>\nView All Featured Games\n<\/button>\n<div>"
       }
     }
   },
