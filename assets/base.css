@@ -2288,7 +2288,7 @@ border-radius: 50px 50px 50px 50px;
 border-left: 1px solid #8401b4;
 border-right: 1px solid #8401b4;
 }
-.multicolumn:not(.background-none) .multicolumn-card {
+body.template-index .multicolumn:not(.background-none) .multicolumn-card {
     border-radius: 25px;
     border-left: 1px solid #8401b4;
     border-right: 1px solid #8401b4;
