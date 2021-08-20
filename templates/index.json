@@ -38,8 +38,8 @@
         "e1c732c1-a177-465a-824f-4f8e30afca36": {
           "type": "column",
           "settings": {
-            "title": "Welcome Gamers",
-            "text": "<p>If you’re a small publisher and want to work with us to get your games onto store shelves, click here for more details:<\/p><p><a href=\"\/collections\" title=\"All collections\">InDiPro Games<\/a><br\/><br\/><\/p>"
+            "title": "Welcome, Gamers!!",
+            "text": "<p>Tired of playing Monopoly? We make it easy to find new games you'll love! Beginner or Expert? We can help you find the perfect game. Click the button below to browse our full catalog. If you have questions, Contact Us<\/p><p><a href=\"\/collections\" title=\"All collections\">InDiPro Games<\/a><br\/><br\/><\/p>"
           }
         },
         "8d1cff45-770b-4ef9-8e64-5174c24fd630": {
@@ -99,6 +99,12 @@
       "settings": {
         "custom_liquid": "<style>\n.multicolumn-card__info{\nborder-radius: 50px 50px 50px 50px;\nborder-left: 1px solid #8401b4;\nborder-right: 1px solid #8401b4;\n}\n.multicolumn:not(.background-none) .multicolumn-card {\n    border-radius: 25px;\n    border-left: 1px solid #8401b4;\n    border-right: 1px solid #8401b4;\n    background: rgba(0,0,0,0.5);\n\n}\n<\/style>"
       }
+    },
+    "1629448965ee5605fd": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact Us"
+      }
     }
   },
   "order": [
@@ -107,6 +113,7 @@
     "multi_column",
     "16294349554838f559",
     "1629434961f2e28fa9",
-    "1629441268db9846dc"
+    "1629441268db9846dc",
+    "1629448965ee5605fd"
   ]
 }
