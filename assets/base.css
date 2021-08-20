@@ -2250,6 +2250,12 @@ background-color: #09092d;
     -webkit-appearance: none;
     appearance: none;
 }
+.multicolumn-card p:last-of-type a:hover {
+    box-shadow: 0 0 6px 1px rgba(var(--color-foreground),1);
+    background-color: rgba(var(--color-foreground),1);
+    color: #000;
+    font-weight: bold;
+}
 .multicolumn-card__info{
   height: 100%;
 }
