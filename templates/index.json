@@ -97,7 +97,7 @@
     "1629441268db9846dc": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\n.multicolumn-card__info{\nborder-radius: 50px 50px 50px 50px;\nborder-left: 1px solid #8401b4;\nborder-right: 1px solid #8401b4;\n}\n<\/style>"
+        "custom_liquid": "<style>\n.multicolumn-card__info{\nborder-radius: 50px 50px 50px 50px;\nborder-left: 1px solid #8401b4;\nborder-right: 1px solid #8401b4;\n}\n.multicolumn:not(.background-none) .multicolumn-card {\n    border-radius: 25px;\n    border-left: 1px solid #8401b4;\n    border-right: 1px solid #8401b4;\n}\n<\/style>"
       }
     }
   },
