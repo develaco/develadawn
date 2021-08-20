@@ -1,11 +1,5 @@
 {
   "sections": {
-    "162944088281d635c7": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<style>\n#shopify-section-template--14926646935734__162944088281d635c7{margin-top:0;}\n<\/style>\n<div style=\"text-align:center; background: rgba(0,0,0,0.5); padding: 2.5rem 2.5rem;\">\n<ul style=\"list-style: none; display: inline-block; width: auto; text-align: left; margin: auto; padding: 0;\">\n<li class=\"h1\">InDiPro Games\n<li>✔ Distributes Independently Produced Board\/Card Games to Gamers\n<li>✔  Gets Indie Publishers Into Local Game Shops\n<li>✔ Hosts Gaming Parties at Local Game Shops\n<\/ul>\n<\/div>"
-      }
-    },
     "1629482859fcbaf948": {
       "type": "image-with-text",
       "blocks": {
@@ -31,6 +25,13 @@
         "height": "small",
         "color_scheme": "background-1",
         "layout": "image_first"
+      }
+    },
+    "162944088281d635c7": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<style>\n#shopify-section-template--14926646935734__162944088281d635c7{margin-top:0;}\n<\/style>\n<div style=\"text-align:center; background: rgba(0,0,0,0.5); padding: 2.5rem 2.5rem;\">\n<ul style=\"list-style: none; display: inline-block; width: auto; text-align: left; margin: auto; padding: 0;\">\n<li class=\"h1\">InDiPro Games\n<li>✔ Distributes Independently Produced Board\/Card Games to Gamers\n<li>✔  Gets Indie Publishers Into Local Game Shops\n<li>✔ Hosts Gaming Parties at Local Game Shops\n<\/ul>\n<\/div>"
       }
     },
     "162943512772967a0d": {
@@ -131,8 +132,8 @@
     }
   },
   "order": [
-    "162944088281d635c7",
     "1629482859fcbaf948",
+    "162944088281d635c7",
     "162943512772967a0d",
     "multi_column",
     "16294349554838f559",
