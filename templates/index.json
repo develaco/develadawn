@@ -21,11 +21,18 @@
         "e1c732c1-a177-465a-824f-4f8e30afca36": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>View All Featured Games<\/p>"
+            "title": "Welcome Gamers",
+            "text": "<p><a href=\"\/collections\" title=\"All collections\">View All Featured Games<\/a><\/p>"
           }
         },
         "8d1cff45-770b-4ef9-8e64-5174c24fd630": {
+          "type": "column",
+          "settings": {
+            "title": "Indie Publishers",
+            "text": ""
+          }
+        },
+        "fec67fe0-1482-47e1-8ee9-3307f3636011": {
           "type": "column",
           "settings": {
             "title": "Column",
@@ -35,7 +42,8 @@
       },
       "block_order": [
         "e1c732c1-a177-465a-824f-4f8e30afca36",
-        "8d1cff45-770b-4ef9-8e64-5174c24fd630"
+        "8d1cff45-770b-4ef9-8e64-5174c24fd630",
+        "fec67fe0-1482-47e1-8ee9-3307f3636011"
       ],
       "settings": {
         "title": "",
