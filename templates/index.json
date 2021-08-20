@@ -28,7 +28,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/indipro_text.png",
-        "height": "adapt",
+        "height": "small",
         "color_scheme": "background-1",
         "layout": "image_first"
       }
