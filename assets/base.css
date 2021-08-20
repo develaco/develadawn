@@ -2257,9 +2257,6 @@ background-color: #09092d;
     display: flex;
     flex-direction: column;
 }
-.multicolumn-list p {
-    flex: 1;
-}
 .multicolumn-card__info div.rte{
     flex: 1;
     display: flex;
@@ -2267,6 +2264,5 @@ background-color: #09092d;
 }
 .multicolumn-list p:last-of-type {
     margin-top: auto;
-  	flex:none;
 }
 /* end develadawn */
