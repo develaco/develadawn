@@ -68,8 +68,8 @@
         "image_ratio": "adapt",
         "column_alignment": "center",
         "background_style": "primary",
-        "button_label": "test",
-        "button_link": "https:\/\/test.com",
+        "button_label": "",
+        "button_link": "",
         "swipe_on_mobile": false
       }
     },
