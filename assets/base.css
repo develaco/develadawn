@@ -2250,4 +2250,7 @@ background-color: #09092d;
     -webkit-appearance: none;
     appearance: none;
 }
+.multicolumn-card__info{
+  height: 100%;
+}
 /* end develadawn */
