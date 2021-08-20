@@ -2244,4 +2244,7 @@ background-color: #09092d;
       padding: 1.2rem 0.8rem;
   }
 }
+body.template-index #shopify-section-template--14926646935734__1629482859fcbaf948 .media>img {
+    object-fit: contain;
+}
 /* end develadawn */
