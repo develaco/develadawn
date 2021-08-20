@@ -9,7 +9,7 @@
         "show_view_all": true,
         "swipe_on_mobile": false,
         "image_ratio": "square",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "add_image_padding": false,
         "show_image_outline": true,
         "show_vendor": false
@@ -51,7 +51,7 @@
     "1629434961f2e28fa9": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div style=\"text-align:center;\">\n<a class=\"button button--primary\">\nView All Featured Games\n<\/a>\n<a class=\"button button--primary>\nView All Games\n<\/a>\n<div>"
+        "custom_liquid": "<div style=\"text-align:center;\">\n<a class=\"button button--primary\">\nView All Featured Games\n<\/a>\n<a class=\"button button--primary\">\nShop Games\n<\/a>\n<div>"
       }
     }
   },
