@@ -42,6 +42,13 @@
             "text": "<p>Tired of playing Monopoly? We make it easy to find new games you'll love! Beginner or Expert? We can help you find the perfect game. Click the button below to browse our full catalog.<\/p><p>If you have questions:<br\/><a href=\"#contact\" title=\"#contact\">Contact Us<\/a>!<\/p><p><a href=\"\/collections\" title=\"All collections\">InDiPro Games<\/a><\/p>"
           }
         },
+        "039ce7f5-2339-4acf-99c7-31a510f125c3": {
+          "type": "column",
+          "settings": {
+            "title": "Local Game Shops",
+            "text": "<p>We partner with Local Game Shops to get Indie games in front of more gamers. This includes Gaming Parties!! Click the button below to find a shop in your area!<\/p><p>If you have questions:<br\/><a href=\"#contact\" title=\"#contact\">Contact Us<\/a>!<\/p><p><a href=\"#\" title=\"#\">Local Game Shops<\/a><\/p>"
+          }
+        },
         "8d1cff45-770b-4ef9-8e64-5174c24fd630": {
           "type": "column",
           "settings": {
@@ -59,6 +66,7 @@
       },
       "block_order": [
         "e1c732c1-a177-465a-824f-4f8e30afca36",
+        "039ce7f5-2339-4acf-99c7-31a510f125c3",
         "8d1cff45-770b-4ef9-8e64-5174c24fd630",
         "fec67fe0-1482-47e1-8ee9-3307f3636011"
       ],
@@ -88,6 +96,18 @@
         "show_vendor": false
       }
     },
+    "1629434961f2e28fa9": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"text-align:center;\">\n<a class=\"button button--primary\">\nView All Featured Games\n<\/a>\n<a class=\"button button--primary\">\nShop Games\n<\/a>\n<div>"
+      }
+    },
+    "1629441268db9846dc": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.multicolumn-card__info{\nborder-radius: 50px 50px 50px 50px;\nborder-left: 1px solid #8401b4;\nborder-right: 1px solid #8401b4;\n}\n.multicolumn:not(.background-none) .multicolumn-card {\n    border-radius: 25px;\n    border-left: 1px solid #8401b4;\n    border-right: 1px solid #8401b4;\n    background: rgba(0,0,0,0.5);\n\n}\n<\/style>"
+      }
+    },
     "1629448965ee5605fd": {
       "type": "contact-form",
       "settings": {
@@ -100,6 +120,8 @@
     "162943512772967a0d",
     "multi_column",
     "16294349554838f559",
+    "1629434961f2e28fa9",
+    "1629441268db9846dc",
     "1629448965ee5605fd"
   ]
 }
