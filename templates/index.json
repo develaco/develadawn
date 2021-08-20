@@ -13,9 +13,25 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "16294349554838f559": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured InDiProGames",
+        "collection": "",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
+      }
     }
   },
   "order": [
-    "multi_column"
+    "multi_column",
+    "16294349554838f559"
   ]
 }
