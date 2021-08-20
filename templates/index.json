@@ -97,7 +97,7 @@
     "1629441268db9846dc": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\n.multicolumn-list__item grid__item{\nborder-radius: 50px 50px 50px 50px;\n}\n<\/style>"
+        "custom_liquid": "<style>\n.multicolumn-list__item{\nborder-radius: 50px 50px 50px 50px;\n}\n<\/style>"
       }
     }
   },
