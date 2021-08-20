@@ -2267,5 +2267,6 @@ background-color: #09092d;
 }
 .multicolumn-list p:last-of-type {
     margin-top: auto;
+  	flex:none;
 }
 /* end develadawn */
