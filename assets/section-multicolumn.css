@@ -246,24 +246,11 @@ body.template-index .multicolumn-list p:last-of-type {
     margin-top: auto;
 }
 body.template-index .multicolumn-card p:last-of-type a{
-	cursor: pointer;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    font: inherit;
     padding: .9rem 3rem 1.1rem;
     text-decoration: none;
-    border: 0;
     border-radius: 15px;
     background-color: rgba(var(--color-button),var(--alpha-button-background));
-    box-shadow: 0 0 0 .1rem rgba(var(--color-button),var(--alpha-button-border));
     color: rgb(var(--color-button-text));
-    min-width: 12rem;
-    min-height: 4.5rem;
-    transition: box-shadow var(--duration-short) ease;
-    -webkit-appearance: none;
-    appearance: none;
     font-weight: bold;
 }
 body.template-index .multicolumn-card p:last-of-type a:hover {
