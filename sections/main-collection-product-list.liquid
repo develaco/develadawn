@@ -463,7 +463,7 @@ li.grid__item {
   {%- endif -%}
 </div>
 
-<div id="CollectionProductGrid">
+<div id="CollectionProductList">
   {%- paginate collection.products by section.settings.products_per_page -%}
     {%- if collection.products.size == 0 -%}
       <div class="collection collection--empty page-width" id="main-collection-product-grid" data-id="{{ section.id }}">
