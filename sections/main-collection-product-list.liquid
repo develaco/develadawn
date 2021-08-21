@@ -54,7 +54,7 @@
 */
 .product-list-grid div{border:1px solid rgba(255,255,255, 0.25); text-align:center;}
   
-@media screen and (max-width: 749){
+@media screen and (max-width: 749px){
 
 .list_product_card {
   display: grid;
@@ -143,6 +143,44 @@
 }
 
 
+}
+
+@media screen and (min-width: 750px){
+
+.list_product_card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "llist_product_card_image list_product_card_title list_product_card_title list_product_card_title list_product_card_players"
+    "llist_product_card_image list_product_card_summary list_product_card_summary list_product_card_summary list_product_card_age"
+    "llist_product_card_image list_product_card_summary list_product_card_summary list_product_card_summary list_product_card_time"
+    "llist_product_card_image list_product_card_price list_product_card_buy list_product_card_details list_product_card_genre";
+}
+
+.list_product_card_title { grid-area: list_product_card_title; }
+
+.llist_product_card_image { grid-area: llist_product_card_image; }
+
+.list_product_card_summary { grid-area: list_product_card_summary; }
+
+.list_product_card_players { grid-area: list_product_card_players; }
+
+.list_product_card_age { grid-area: list_product_card_age; }
+
+.list_product_card_time { grid-area: list_product_card_time; }
+
+.list_product_card_genre { grid-area: list_product_card_genre; }
+
+.list_product_card_price { grid-area: list_product_card_price; }
+
+.list_product_card_buy { grid-area: list_product_card_buy; }
+
+.list_product_card_details { grid-area: list_product_card_details; }
+
+  
 }
 
 .product-list-grid {
