@@ -126,6 +126,7 @@
     },
     "1629448965ee5605fd": {
       "type": "contact-form",
+      "disabled": true,
       "settings": {
         "heading": "Contact Us"
       }
