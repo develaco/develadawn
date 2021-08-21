@@ -100,7 +100,7 @@
     <div class="featured-product">
       <div class="product__info-wrapper grid__item">
         <div id="ProductInfo-{{ section.id }}" class="product__info-container">
-          {%- assign product_card_product_form_id = 'product-form-' | append: section.id -%}
+          {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
           {%- for block in section.blocks -%}
             {%- case block.type -%}
