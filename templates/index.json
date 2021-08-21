@@ -130,6 +130,73 @@
       "settings": {
         "heading": "Contact Us"
       }
+    },
+    "16295830514e8045b2": {
+      "type": "featured-product",
+      "blocks": {
+        "16295830514e8045b2-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "16295830514e8045b2-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "16295830514e8045b2-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "16295830514e8045b2-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "16295830514e8045b2-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "16295830514e8045b2-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "16295830514e8045b2-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "16295830514e8045b2-7": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "16295830514e8045b2-0",
+        "16295830514e8045b2-1",
+        "16295830514e8045b2-2",
+        "16295830514e8045b2-3",
+        "16295830514e8045b2-4",
+        "16295830514e8045b2-5",
+        "16295830514e8045b2-6",
+        "16295830514e8045b2-7"
+      ],
+      "settings": {
+        "product": "annihilation-zombies",
+        "secondary_background": false,
+        "enable_video_looping": false
+      }
     }
   },
   "order": [
@@ -138,6 +205,7 @@
     "162943512772967a0d",
     "multi_column",
     "16294349554838f559",
-    "1629448965ee5605fd"
+    "1629448965ee5605fd",
+    "16295830514e8045b2"
   ]
 }
