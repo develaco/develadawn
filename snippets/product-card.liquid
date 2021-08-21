@@ -106,9 +106,13 @@
                       <td style="width: 40%">Genre: <b>Hand elimination / set collection</b></td>
                     </tr>
                     <tr>
+                      <table>
+                        <tr>
                       <td style="width: 26.6%">{% render 'price', product: product_card_product, price_class: '' %}</td>
                       <td style="width: 26.6%">Buy Now</td>
                       <td style="width: 26.6%"><a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">More Details</a></td>
+                        </tr>
+                      </table>
                     </tr>
 				</thead>
 			</table>
