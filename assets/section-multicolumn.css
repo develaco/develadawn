@@ -266,10 +266,7 @@ body.template-index .multicolumn-card p:last-of-type a{
     appearance: none;
 }
 body.template-index .multicolumn-card p:last-of-type a:hover {
-
     background-color: rgba(var(--color-foreground),1);
-    color: #000;
-    font-weight: bold;
 }
 body.template-index .multicolumn-card__info {
     display: flex;
