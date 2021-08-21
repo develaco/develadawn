@@ -15,31 +15,31 @@
 
 <div class="card-wrapper">
 	<span class="visually-hidden">{{ product_card_product.title | escape }}</span>
-  	<div>
-		<div class="stats">       
-<table>
-<tbody>
-<tr>
-  <td colspan="2">{{ product_card_product.title | escape }}</td>
-</tr>
-<tr>
-<td>Players: <b>2-8</b></td>
-<td>{{ product_card_product.metafields.custom.one_liner }}</td>
-</tr>
-<tr>
-<td>A.G.E.*: <b>10+</b></td>
-<td>{% render 'price', product: product_card_product, price_class: '' %}</td>
-</tr>
-<tr>
-<td>Time: <b>60 min</b></td>
-<td>Buy Now</td>
-</tr>
-<tr>
-<td>Genre: <b>Hand elimination /set collection</b></td>
-  <td><a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">More Details</a></td>
-</tr>
-</tbody>
-</table>
+	<div class="stats"> 
+	  	<div>     
+            <table>
+            <tbody>
+            <tr>
+              <td colspan="2">{{ product_card_product.title | escape }}</td>
+            </tr>
+            <tr>
+            <td>Players: <b>2-8</b></td>
+            <td>{{ product_card_product.metafields.custom.one_liner }}</td>
+            </tr>
+            <tr>
+            <td>A.G.E.*: <b>10+</b></td>
+            <td>{% render 'price', product: product_card_product, price_class: '' %}</td>
+            </tr>
+            <tr>
+            <td>Time: <b>60 min</b></td>
+            <td>Buy Now</td>
+            </tr>
+            <tr>
+            <td>Genre: <b>Hand elimination /set collection</b></td>
+              <td><a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">More Details</a></td>
+            </tr>
+            </tbody>
+            </table>
 		</div>
 	</div>
 </div>
