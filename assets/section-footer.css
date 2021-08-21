@@ -515,11 +515,11 @@ footer{
     display: flex;
     flex-wrap: wrap;
 }
-footer div:nth-child(1),
-footer div:nth-child(2){
+footer .footer__content-top,
+footer .footer__content-contact{
   	width: 50%;
 }
-footer div:nth-child(3){
+footer .footer__content-bottom{
 	width: 100%;
 }
 /* develadawn */
