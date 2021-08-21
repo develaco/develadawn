@@ -2,6 +2,7 @@
   "sections": {
     "162943479631462d49": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured InDiPro Games",
         "collection": "featured",
@@ -17,6 +18,7 @@
     },
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": false,
         "show_collection_image": false
