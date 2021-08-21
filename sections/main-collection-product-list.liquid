@@ -4,9 +4,17 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-product-grid.css' | asset_url | stylesheet_tag }}
 <style>
-#CollectionProductList{
-  max-width: 1200px;
-  margin: auto;
+@media screen and (max-width: 749px){
+  #CollectionProductList{
+    max-width: 450px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 750px){
+  #CollectionProductList{
+    max-width: 1200px;
+    margin: auto;
+  }
 }
 #CollectionProductList li.grid__item {
     width: 100%;
@@ -65,8 +73,6 @@
 @media screen and (max-width: 749px){
 
 .list_product_card {
-  max-width: 400px;
-  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
