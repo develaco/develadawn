@@ -95,10 +95,6 @@
   <div class="list_product_card_price">{% render 'price', product: product_card_product, price_class: '' %}</div>
   <div class="list_product_card_buy">
 
-<section>
-  <div class="page-width">
-    <div class="featured-product">
-      <div class="product__info-wrapper grid__item">
         <div id="ProductInfo-{{ section.id }}" class="product__info-container">
           {%- assign product_card_product_form_id = 'product-form-' | append: section.id -%}
               <noscript>
@@ -160,11 +156,7 @@
                   </div>
                 {%- endif -%}
               </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>   
+        </div>  
       
   </div>
   <div class="list_product_card_details"><a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">More Details</a></div>
