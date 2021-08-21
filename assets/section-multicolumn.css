@@ -267,6 +267,8 @@ body.template-index .multicolumn-card p:last-of-type a{
 }
 body.template-index .multicolumn-card p:last-of-type a:hover {
     background-color: rgba(var(--color-foreground),1);
+    box-shadow: 0 0 6px 1px rgba(var(--color-foreground),1);
+
 }
 body.template-index .multicolumn-card__info {
     display: flex;
