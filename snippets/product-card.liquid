@@ -92,6 +92,9 @@
           <span class="card-information__text h5">
             {{ product_card_product.title | escape }}
           </span>
+        <p>
+          {{ product.description }}
+        </p>
         {%- endif -%}
 
         {% comment %} TODO: metafield {% endcomment %}
