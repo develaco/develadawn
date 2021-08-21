@@ -2,6 +2,7 @@
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-product-grid.css' | asset_url | stylesheet_tag }}
 
 <link rel="preload" href="{{ 'component-rte.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
@@ -455,157 +456,51 @@
     </div>
   {%- endif -%}
 </div>
-{% comment %}
-    Renders a product card using "List" style
 
-    Accepts:
-    - product: {Object} Product Liquid object (required)
-    - show_vendor: {Boolean} Show the product's vendor depending on the section setting (optional)
+<div id="CollectionProductGrid">
+  {%- paginate collection.products by section.settings.products_per_page -%}
+    {%- if collection.products.size == 0 -%}
+      <div class="collection collection--empty page-width" id="main-collection-product-grid" data-id="{{ section.id }}">
+        <div class="loading-overlay"></div>
 
-    Usage:
-    {% include 'product-card-list', product: product, show_vendor: section.settings.show_vendor %}
-{% endcomment %}
-<div id="ProductSection-{{ product.handle }}" class="product-card product-card--list dark-{{ product.metafields.custom.color_label }}" style="background: {{ product.metafields.custom.color }}" data-section-id="{{ product.handle }}" data-section-type="product" data-ajax-enabled="{{ settings.enable_ajax }}">
-  {%- assign current_variant = product.selected_or_first_available_variant -%}
-  <div class="list-view-item__link">
-    <div class="list-view-item__image-column">
-      <div class="list-view-item__image-wrapper product-card__image-wrapper">
-      {% unless product.featured_media == null %}
-        <img class="list-view-item__image" src="{{ product.featured_media | img_url: '95x95', scale: 2 }}" alt="{{ product.featured_media.alt }}">
-      {% endunless %}
+        <p class="collection-product-count light" role="status">
+          {%- if collection.products_count == collection.all_products_count -%}
+            {{ 'sections.collection_template.product_count_simple' | t: count: collection.products_count }}
+          {%- else -%}
+            {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
+          {%- endif -%}
+        </p>
+
+        <div class="title-wrapper center">
+          <h2 class="title title--primary">
+            {{ 'sections.collection_template.empty' | t }}<br>
+            {{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: "underlined-link link" }}
+          </h2>
+        </div>
       </div>
-    </div>
+    {%- else -%}
+      <div class="collection page-width">
+        <div class="loading-overlay"></div>
 
-    <div class="list-view-item__title-column">
-      <div class="list-view-item__title" aria-hidden="true">
-        <table>
-          <tr>
-            <td style="width: 100%;">
-                <a href="{{ product.url }}"><span class="product-card__title">{{ product.title }}</span></a>   
-            </td>
-            <td>
-                {% unless section_onboarding %}
-                  {%- assign price = current_variant.price -%}
-                  {%- assign available = current_variant.available -%}
-                {% else %}
-                  {%- assign price = 1999 -%}
-                  {%- assign available = true -%}
-                {% endunless %}
-                  <div class="featured-product__price">
-                    {% include 'product-price', variant: current_variant, product: product, show_vendor: section.settings.show_vendor %}
-                  </div>   
-            </td>
-            <td>
-                  <div class="product-form__item">
-                    <label for="Quantity-{{ product.handle }}">{{ 'products.product.quantity' | t }}</label>
-                    <input type="number" 
-                           id="Quantity-{{ product.handle }}"
-                      	   name="quantity" value="1" min="1" pattern="[0-9]*"
-                      	   class="product-form__input product-form__input--quantity"
-                           autocomplete="off"
-                      	   data-quantity-input>
-                  </div>      
-            </td>
-            <td>
-            <div class="grid__item {{ product_description_width }}">
-              <div class="product-single__meta">
-            {% capture "form_classes" -%}
-              product-form product-form-{{ product.handle }}
-              {%- if section.settings.enable_payment_button and product.has_only_default_variant%} product-form--payment-button-no-variants{% endif %}
-              {%- if current_variant.available == false %} product-form--variant-sold-out {%- endif -%}
-            {%- endcapture %}
-            {% form 'product', product, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
-              <div class="product-form__error-message-wrapper product-form__error-message-wrapper--hidden{% if section.settings.enable_payment_button %} product-form__error-message-wrapper--has-payment-button{% endif %}" data-error-message-wrapper role="alert">
-                <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
-                {% include 'icon-error' %}
-                <span class="product-form__error-message" data-error-message>{{ 'products.product.quantity_minimum_message' | t }}</span>
-              </div>
+        <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="
+          grid grid--2-col negative-margin product-grid
+          {% if collection.products_count < 4 %} grid--{{ collection.products_count }}-col-tablet{% else %}
+            {% if collection.products_count == 4 %} grid--4-col-desktop{% else %} grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
+          {% endif %}">
+          {%- for product in collection.products -%}
+            <li class="grid__item">
+              {% render 'product-card', product_card_product: product, media_size: section.settings.image_ratio, show_secondary_image: section.settings.show_secondary_image, add_image_padding: section.settings.add_image_padding, show_vendor: section.settings.show_vendor, show_image_outline: section.settings.show_image_outline %}
+            </li>
+          {%- endfor -%}
+        </ul>
 
-              <div class="product-form__controls-group product-form__controls-group--submit">
-                <div class="product-form__item product-form__item--submit
-                      {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
-                >
-                  <button type="submit" name="add"
-                    {% unless current_variant.available %} aria-disabled="true"{% endunless %}
-                    aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}Add{% endunless %}"
-                    class="btn product-form__cart-submit"
-                    {% if settings.enable_ajax %}aria-haspopup="dialog"{% endif %}
-                    data-add-to-cart>
-                    <span style="display:none;" data-add-to-cart-text>
-                      {% unless current_variant.available %}
-                        {{ 'products.product.sold_out' | t }}
-                      {% else %}
-                        Add
-                      {% endunless %}
-                    </span>
-                    <span>Add</span>
-                    <span class="hide" data-loader>
-                      {% include 'icon-spinner' %}
-                    </span>
-                  </button>
-                </div>
-              </div>
-                {%- comment -%}
-                  Live region for announcing updated price and availability to screen readers
-                {%- endcomment -%}
-                <p class="visually-hidden" data-product-status
-                  aria-live="polite"
-                  role="status"
-                ></p>
-
-                {%- comment -%}
-                  Live region for announcing that the product form has been submitted and the
-                  product is in the process being added to the cart
-                {%- endcomment -%}
-                <p class="visually-hidden" data-loader-status
-                  aria-live="assertive"
-                  role="alert"
-                  aria-hidden="true"
-                >{{ 'products.product.loader_label' | t }}</p>
-              </div>
-            </div>      
-            </td>
-          </tr>
-				{% unless product.has_only_default_variant %}
-		<tr>
-          <td colspan="4">
-                {% unless product.has_only_default_variant %}
-                  <div class="product-form__controls-group">
-                    {% for option in product.options_with_values %}
-                      <div class="selector-wrapper js product-form__item">
-                        <label for="SingleOptionSelector-{{ product.handle }}-{{ forloop.index0 }}">
-                          {{ option.name }}
-                        </label>
-                        <select class="single-option-selector single-option-selector-{{ product.handle }} product-form__input" id="SingleOptionSelector-{{ product.handle }}-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
-                          {% for value in option.values %}
-                            <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
-                          {% endfor %}
-                        </select>
-                      </div>
-                    {% endfor %}
-                  </div>
-                {% endunless %}
-
-                <select name="id" id="ProductSelect-{{ product.handle }}" class="product-form__variants no-js">
-                  {% for variant in product.variants %}
-                    <option value="{{ variant.id }}"
-                      {%- if variant == current_variant %} selected="selected" {%- endif -%}
-                    >
-                      {{ variant.title }}  {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
-                    </option>
-                  {% endfor %}
-                </select>
-          </td>
-          </tr>
-				{% endunless %}
-              </table>
-            </div>
-		</div>
-	</div>
+        {%- if paginate.pages > 1 -%}
+          {% render 'pagination', paginate: paginate, anchor: '' %}
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  {%- endpaginate -%}
 </div>
-            {% endform %}
-
-
 
 {% schema %}
 {
