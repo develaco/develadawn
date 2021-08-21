@@ -4,10 +4,14 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-product-grid.css' | asset_url | stylesheet_tag }}
 <style>
-li.grid__item {
+#CollectionProductList li.grid__item {
     width: 100%;
-  max-width: 100%;
-}  
+  	max-width: 100%;
+}
+#CollectionProductList li.grid__item .media {
+    width: 100%;
+  	max-width: 200px;
+}   
 </style>
 
 <link rel="preload" href="{{ 'component-rte.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
