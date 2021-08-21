@@ -93,7 +93,15 @@
   <div class="list_product_card_time"><span>Time:</span><span>60 min</span></div>
   <div class="list_product_card_genre"><span>Genre:</span><span>Hand elimination / set collection</span></div>
   <div class="list_product_card_price">{% render 'price', product: product_card_product, price_class: '' %}</div>
-  <div class="list_product_card_buy">Buy Now</div>
+  <div class="list_product_card_buy">
+     
+<form method="post" action="/cart/add">
+  <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+  <input min="1" type="number" id="quantity" name="quantity" value="1"/>
+  <input type="submit" value="Add to cart" class="btn" />
+</form>  
+      
+  </div>
   <div class="list_product_card_details"><a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">More Details</a></div>
 </div>
 </div>
