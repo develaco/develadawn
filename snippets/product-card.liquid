@@ -104,7 +104,7 @@
                       type="submit"
                       name="add"
                       class="product-form__submit button button--full-width button--primary"
-                    {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+                    {% if product_card_product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                     >
                         {%- if product.selected_or_first_available_variant.available -%}
                           {{ 'product_card_products.product.add_to_cart' | t }}
