@@ -106,11 +106,6 @@
                       class="product-form__submit button button--full-width button--primary"
                     {% if product_card_product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                     >
-                        {%- if product.selected_or_first_available_variant.available -%}
-                          {{ 'product_card_products.product.add_to_cart' | t }}
-                        {%- else -%}
-                          {{ 'product_card_products.product.sold_out' | t }}
-                        {%- endif -%}
                     </button>
                     {%- if block.settings.show_dynamic_checkout -%}
                       {{ form | payment_button }}
