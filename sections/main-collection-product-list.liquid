@@ -196,26 +196,18 @@
 
 .list_product_card_players {
   grid-area: list_product_card_players;
-  justify-self: center;
-  align-self: center;
 }
 
 .list_product_card_age {
   grid-area: list_product_card_age;
-  justify-self: center;
-  align-self: center;
 }
 
 .list_product_card_time {
   grid-area: list_product_card_time;
-  justify-self: center;
-  align-self: center;
 }
 
 .list_product_card_genre {
   grid-area: list_product_card_genre;
-  justify-self: center;
-  align-self: center;
 }
 
 .list_product_card_price {
@@ -235,7 +227,16 @@
   justify-self: center;
   align-self: center;
 }
-
+  
+.list_product_card_players,
+.list_product_card_age,
+.list_product_card_time,
+.list_product_card_genre{
+	align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+}
   
 }
 
