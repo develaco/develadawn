@@ -16,6 +16,9 @@
 <div class="card-wrapper">
 	<span class="visually-hidden">{{ product_card_product.title | escape }}</span>
 	<div class="stats">
+
+	  	<div class="stats-right">     
+            <table>
       	<div class="stats-left">
 
     <div class="card card--product{% if product_card_product.featured_media == nil %} card--text-only card--soft{% endif %}{% if product_card_product.featured_media != nil and show_image_outline %} card--outline{% endif %}" tabindex="-1">
@@ -84,8 +87,6 @@
 
 
       	</div>
-	  	<div class="stats-right">     
-            <table>
                 <tbody>
                     <tr>
                       	<td colspan="2">{{ product_card_product.title | escape }}</td>
