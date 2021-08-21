@@ -19,3 +19,11 @@
     margin-bottom: -1rem;
   }
 }
+
+/*develadawn*/
+.product-grid img {
+    border-radius: 25px;
+    border-left: 4px solid #8d00be;
+    border-right: 4px solid #8d00be;
+}
+/*develadawn*/
