@@ -96,7 +96,7 @@
   <div class="list_product_card_buy">
      
 <form method="post" action="/cart/add">
-  <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+  <input type="hidden" name="id" value="{{ product_card_product.variants.first.id }}" />
   <input min="1" type="number" id="quantity" name="quantity" value="1"/>
   <input type="submit" value="Add to cart" class="btn" />
 </form>  
