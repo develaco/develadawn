@@ -99,7 +99,7 @@
 
         {% render 'price', product: product_card_product, price_class: '' %}
         <p>
-          {{ product.description }}
+          {{ product.metafields.custom.one_liner }}
         </p>
       </div>
     </div>
