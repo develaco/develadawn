@@ -96,15 +96,19 @@
 </div>
 
 
-<div class="list_product_card list_product_card_mobile">
-  <div class="list_product_card_title"></div>
-  <div class="list_product_card_image"></div>
-  <div class="list_product_card_summary"></div>
-  <div class="list_product_card_players"></div>
-  <div class="list_product_card_age"></div>
-  <div class="list_product_card_time"></div>
-  <div class="list_product_card_genre"></div>
-  <div class="list_product_card_price"></div>
-  <div class="list_product_card_buy"></div>
-  <div class="list_product_card_details"></div>
+<div class="list_product_card">
+  <div class="list_product_card_title">{{ product_card_product.title | escape }}</div>
+  <div class="list_product_card_image">
+  
+  
+  
+  </div>
+  <div class="list_product_card_summary">{{ product_card_product.metafields.custom.one_liner }}</div>
+  <div class="list_product_card_players">Players: <b>2-8</b></div>
+  <div class="list_product_card_age">A.G.E.*: <b>10+</b></div>
+  <div class="list_product_card_time">Time: <b>60 min</b></div>
+  <div class="list_product_card_genre">Genre: <b>Hand elimination / set collection</b></div>
+  <div class="list_product_card_price">{% render 'price', product: product_card_product, price_class: '' %}</div>
+  <div class="list_product_card_buy">Buy Now</div>
+  <div class="list_product_card_details"><a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">More Details</a></div>
 </div>
