@@ -21,10 +21,6 @@
             <table>
                 <tbody>
                     <tr>
-                      	<td class="h1">{{ product_card_product.title | escape }}</td>
-                      	<td class="h2" colspan="2">{{ product_card_product.metafields.custom.one_liner }}</td>
-                    </tr>
-                    <tr>
                       <th rowspan="4">
                       
       	<div class="stats-left">
@@ -97,6 +93,8 @@
       	</div>                      
                       
                       </th>
+                      <td class="h2" colspan="2"><span class="h1">{{ product_card_product.title | escape }}</span>span>{{ product_card_product.metafields.custom.one_liner }}</td>
+
                     	<td>Players: <b>2-8</b></td>
                     	<td>{{ product_card_product.metafields.custom.one_liner }}</td>
                     </tr>
