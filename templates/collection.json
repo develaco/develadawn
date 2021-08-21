@@ -22,8 +22,8 @@
         "show_collection_image": false
       }
     },
-    "product-grid": {
-      "type": "main-collection-product-grid",
+    "product-list": {
+      "type": "main-collection-product-list",
       "settings": {
         "products_per_page": 16,
         "image_ratio": "square",
@@ -40,6 +40,6 @@
   "order": [
     "162943479631462d49",
     "banner",
-    "product-grid"
+    "product-list"
   ]
 }
