@@ -11,73 +11,12 @@
 <section>
   <div class="page-width">
     <div class="featured-product">
-      <div class="grid__item product__media-wrapper">
-        <div class="product__media-list">
-          {%- if product.selected_or_first_available_variant.featured_media != null -%}
-            {%- assign media = product.selected_or_first_available_variant.featured_media -%}
-            <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
-              {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false %}
-            </div>
-          {%- endif -%}
-          {%- liquid
-            assign media_to_render = product.featured_media.id
-            for variant in product.variants
-              assign media_to_render = media_to_render | append: variant.featured_media.id | append: ' '
-            endfor
-          -%}
-          {%- for media in product.media -%}
-            {%- if media_to_render contains media.id and media.id != product.selected_or_first_available_variant.featured_media.id -%}
-              <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
-                {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false %}
-              </div>
-            {%- endif -%}
-          {%- endfor -%}
-        </div>
-      </div>
       <div class="product__info-wrapper grid__item">
         <div id="ProductInfo-{{ section.id }}" class="product__info-container">
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
           {%- for block in section.blocks -%}
             {%- case block.type -%}
-
-            {%- when 'share' -%}
-              <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
-              <share-button class="share-button" {{ block.shopify_attributes }}>
-                <button class="share-button__button hidden">
-                  {% render 'icon-share' %}
-                  {{ block.settings.share_label | escape }}
-                </button>
-                <details>
-                  <summary class="share-button__button">
-                    {% render 'icon-share' %}
-                    {{ block.settings.share_label | escape }}
-                  </summary>
-                  <div id="Product-share-{{ section.id }}" class="share-button__fallback motion-reduce">
-                    <div class="field">
-                      <span id="ShareMessage-{{ section.id }}" class="share-button__message hidden" role="status">
-                      </span>
-                      <input type="text"
-                            class="field__input"
-                            id="url"
-                            value="{{ shop.url | append: product.url }}"
-                            placeholder="{{ 'general.share.share_url' | t }}"
-                            onclick="this.select();"
-                            readonly
-                      >
-                      <label class="field__label" for="url">{{ 'general.share.share_url' | t }}</label>
-                    </div>
-                    <button class="share-button__close hidden no-js-hidden">
-                      {% render 'icon-close' %}
-                      <span class="visually-hidden">{{ 'general.share.close' | t }}</span>
-                    </button>
-                    <button class="share-button__copy no-js-hidden">
-                      {% render 'icon-clipboard' %}
-                      <span class="visually-hidden">{{ 'general.share.copy_to_clipboard' | t }}</span>
-                    </button>
-                  </div>
-                </details>
-              </share-button>
             {%- when 'variant_picker' -%}
               {%- unless product.has_only_default_variant -%}
                 {%- if block.settings.picker_type == 'button' -%}
