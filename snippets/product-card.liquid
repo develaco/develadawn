@@ -87,12 +87,12 @@
   
   
   </div>
-  <div class="list_product_card_summary">{{ product_card_product.metafields.custom.one_liner }}{% render 'price', product: product_card_product, price_class: '' %}</div>
+  <div class="list_product_card_summary">{{ product_card_product.metafields.custom.one_liner }}</div>
   <div class="list_product_card_players"><span>Players:</span><span>2-8</span></div>
   <div class="list_product_card_age"><span>A.G.E.*:</span><span>10+</span></div>
   <div class="list_product_card_time"><span>Time:</span><span>60 min</span></div>
   <div class="list_product_card_genre"><span>Genre:</span><span>Hand elimination / set collection</span></div>
-  <div class="list_product_card_price"></div>
+  <div class="list_product_card_price">{% render 'price', product: product_card_product, price_class: '' %}</div>
   <div class="list_product_card_buy">
 
         <div id="ProductInfo-{{ section.id }}" class="product__info-container">
