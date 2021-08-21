@@ -93,7 +93,7 @@
       	</div>                      
                       
                       </th>
-                      <td class="h2" colspan="2"><span class="h1" style="display:block;">{{ product_card_product.title | escape }}</span>{{ product_card_product.metafields.custom.one_liner }}</td>
+                      <td class="h2" colspan="2"><span class="h1" style="display:block;">{{ product_card_product.title | escape }} {% render 'price', product: product_card_product, price_class: '' %}</span><p style="padding: 1.5rem">{{ product_card_product.metafields.custom.one_liner }}</p></td>
                     </tr>
                   <tr>
                         <td>Players: <b>2-8</b></td>
@@ -104,7 +104,7 @@
                     	<td>Genre: <b>Hand elimination /set collection</b></td>
                     </tr>
                     <tr>
-                    	<td>{% render 'price', product: product_card_product, price_class: '' %} Buy Now</td>
+                    	<td> Buy Now</td>
                     	<td><a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">More Details</a></td>
                     </tr>
                 </tbody>
