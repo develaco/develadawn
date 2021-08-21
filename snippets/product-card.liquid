@@ -14,15 +14,16 @@
 {% endcomment %}
 
 <div class="card-wrapper">
-	<span class="visually-hidden">{{ product_card_product.title | escape }}</span>
+    <span class="visually-hidden">{{ product_card_product.title | escape }}</span>
+
 		<div class="stats">
-          
 <table>
 <tbody>
 <tr>
   <td colspan="2">{{ product_card_product.title | escape }}</td>
 </tr>
 <tr>
+
 <td>Players: <b>2-8</b></td>
 <td>{{ product_card_product.metafields.custom.one_liner }}</td>
 </tr>
@@ -42,3 +43,5 @@
 </table>
         </div>
       </div>
+    </div>
+</div>
