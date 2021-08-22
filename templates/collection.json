@@ -1,24 +1,7 @@
 {
   "sections": {
-    "162943479631462d49": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Featured InDiPro Games",
-        "collection": "featured",
-        "products_to_show": 6,
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": false,
-        "show_vendor": false
-      }
-    },
     "banner": {
       "type": "main-collection-banner",
-      "disabled": true,
       "settings": {
         "show_collection_description": false,
         "show_collection_image": false
@@ -40,7 +23,6 @@
     }
   },
   "order": [
-    "162943479631462d49",
     "banner",
     "product-list"
   ]
